@@ -20,16 +20,19 @@ class Detail extends Component {
                         <Image source={require('../assets/CardJawa.png')} style={{width: 317, height: 81}}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Image source={require('../assets/CardSumatra.png')} style={{width: 317, height: 81, marginTop: 50}}></Image>
+                        <Image source={require('../assets/CardSumatra.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Image source={require('../assets/CardKalimantan.png')} style={{width: 317, height: 81, marginTop: 50}}></Image>
+                        <Image source={require('../assets/CardKalimantan.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Image source={require('../assets/CardSulawesi.png')} style={{width: 317, height: 81, marginTop: 50}}></Image>
+                        <Image source={require('../assets/CardSulawesi.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Image source={require('../assets/CardPapua.png')} style={{width: 317, height: 81, marginTop: 50}}></Image>
+                        <Image source={require('../assets/CardPapua.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Quiz')}>
+                        <Image source={require('../assets/BottomQuiz.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
                     </TouchableOpacity>
                 </View>
             </View>
