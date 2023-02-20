@@ -11,7 +11,7 @@ class Home extends Component {
             <View style={{backgroundColor:'#FF8243', flex: 1,}}>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 40, paddingHorizontal:20}}>
                     <Text style={{fontSize: 26, fontWeight: 'bold'}}>Home</Text>
-                    <TouchableOpacity style={{ marginTop:10}}>
+                    <TouchableOpacity style={{ marginTop:10}} onPress={() => this.props.navigation.navigate('Detail')}>
                         <Image source={require('../assets/list.png')}></Image>
                     </TouchableOpacity>
                 </View>
@@ -32,9 +32,20 @@ class Home extends Component {
                         shadowOpacity: 1,
                         shadowRadius: 10,
                         shadowOffset: 2,
-                        marginTop: -65
+                        marginTop: -85
                     }}>
                         <Image source={require('../assets/CardGadang.png')}
+                        style={{width: 380, height: 215}}></Image>
+                    </TouchableOpacity>
+                    <TouchableOpacity 
+                    style={{
+                        shadowColor: 'black',
+                        shadowOpacity: 1,
+                        shadowRadius: 10,
+                        shadowOffset: 2,
+                        marginTop: 10
+                    }}>
+                        <Image source={require('../assets/CardBetang.png')}
                         style={{width: 380, height: 215}}></Image>
                     </TouchableOpacity>
                 </View>

@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from './components/screens/Home.js';
 import Detail from './components/screens/Detail.js';
 import Splash from './components/screens/Splash.js';
+import Jawa from './components/screens/Jawa.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ return(
       <Stack.Screen name ="Home" component={Home}></Stack.Screen>
       <Stack.Screen name ="Detail" component={Detail}></Stack.Screen>
       <Stack.Screen name = "Splash" component={Splash}></Stack.Screen>
+      <Stack.Screen name = "Jawa" component={Jawa}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 )
