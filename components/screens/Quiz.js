@@ -13,9 +13,9 @@ class Jateng extends Component {
                 <TouchableOpacity>
                     <Image source={require('../assets/BackQZ.png')} style={{width: 60, height: 60}}></Image>
                 </TouchableOpacity>
-                <View style={{alignItems: 'center'}}>
-                    <Image source={require('../assets/viewqz.png')} style={{ height: 600, width: 335}}></Image>
                 </View>
+                <View style={{alignItems: 'center', backgroundColor: '#FFFF', flex: 1,}}>
+                    <Image source={require('../assets/viewqz.png')} style={{ height: 600, width: 335}}></Image>
                 </View>
             </View>
         )

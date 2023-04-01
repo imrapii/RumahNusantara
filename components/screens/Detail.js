@@ -19,7 +19,7 @@ class Detail extends Component {
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('Jawa')}>
                         <Image source={require('../assets/CardJawa.png')} style={{width: 317, height: 81}}></Image>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Sumatra')}>
                         <Image source={require('../assets/CardSumatra.png')} style={{width: 317, height: 81, marginTop: 40}}></Image>
                     </TouchableOpacity>
                     <TouchableOpacity>

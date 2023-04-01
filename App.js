@@ -9,6 +9,7 @@ import Splash from './components/screens/Splash.js';
 import Jawa from './components/screens/Jawa.js';
 import Jateng from "./components/screens/Jateng.js";
 import Quiz from './components/screens/Quiz';
+import Sumatra from "./components/screens/Sumatra.js";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ return(
       <Stack.Screen name ="Detail" component={Detail}></Stack.Screen>
       <Stack.Screen name = "Splash" component={Splash}></Stack.Screen>
       <Stack.Screen name = "Jawa" component={Jawa}></Stack.Screen>
+      <Stack.Screen name = "Sumatra" component={Sumatra}></Stack.Screen>
       <Stack.Screen name = "Jateng" component={Jateng}></Stack.Screen>
       <Stack.Screen name = "Quiz" component={Quiz}></Stack.Screen>
     </Stack.Navigator>
