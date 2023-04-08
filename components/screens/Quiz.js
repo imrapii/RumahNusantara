@@ -40,7 +40,7 @@ Jika Anda memilih jawaban yang salah untuk sebuah pertanyaan, Anda dapat mencoba
 
                 <View style={{ backgroundColor: "#273032", width: "100%", height: 75, marginTop: 60, borderRadius: 40, position: 'absolute', bottom: 0, justifyContent: 'center', alignItems: 'center' }}>
                     
-                    <TouchableOpacity style={{width: 350,height:50, backgroundColor: "#F2954D", borderRadius: 16, alignItems:'center',justifyContent:'center'}}>
+                    <TouchableOpacity style={{width: 350,height:50, backgroundColor: "#F2954D", borderRadius: 16, alignItems:'center',justifyContent:'center'}} onPress={Soal}>
                         <Text style={{ color: "white", fontSize: 16,}}>
                             Start Quiz
                         </Text>
