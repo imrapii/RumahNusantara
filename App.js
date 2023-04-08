@@ -10,13 +10,14 @@ import Jawa from './components/screens/Jawa.js';
 import Jateng from "./components/screens/Jateng.js";
 import Quiz from './components/screens/Quiz';
 import Sumatra from "./components/screens/Sumatra.js";
+import Soal from "./components/screens/Soal.js";
 
 const Stack = createNativeStackNavigator();
 
 function App(){
 return(
   <NavigationContainer>
-    <Stack.Navigator initialRouteName= "Home" screenOptions={{headerShown: false}}>
+    <Stack.Navigator initialRouteName= "Soal" screenOptions={{headerShown: false}}>
       <Stack.Screen name ="Home" component={Home}></Stack.Screen>
       <Stack.Screen name ="Detail" component={Detail}></Stack.Screen>
       <Stack.Screen name = "Splash" component={Splash}></Stack.Screen>
@@ -24,6 +25,7 @@ return(
       <Stack.Screen name = "Sumatra" component={Sumatra}></Stack.Screen>
       <Stack.Screen name = "Jateng" component={Jateng}></Stack.Screen>
       <Stack.Screen name = "Quiz" component={Quiz}></Stack.Screen>
+      <Stack.Screen name = "Soal" component={Soal}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 )
