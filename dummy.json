@@ -1,0 +1,35 @@
+{
+    "data" :
+    [
+        {
+            "pulau" : "pulau jawa",
+            "data" : [
+                {
+                    "provinsi" : "jawa tengah"
+                },
+                {
+                    "provinsi" : "jawa timur"
+                },
+                {
+                    "provinsi" : "jawa barat"
+                },
+            ]
+        },
+        {
+            "pulau" : "pulau brebes",
+            "data" : [
+                {
+                    "provinsi" : "jawa tengah"
+                },
+                {
+                    "provinsi" : "jawa timur"
+                },
+                {
+                    "provinsi" : "jawa barat"
+                },
+            ]
+        }
+    ]
+} 
+
+data.data
