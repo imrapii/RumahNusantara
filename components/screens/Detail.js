@@ -40,7 +40,7 @@ const Detail = ({navigation}) => {
           <TouchableOpacity
             key={i}
             onPress={() => navigation.navigate("Materi")}>
-            <Text>{v?.nama}</Text>
+            <Text style={{fontSize: 16}}>{v?.nama}</Text>
           </TouchableOpacity>
         ))}
       </View>
