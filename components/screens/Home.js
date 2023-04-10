@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {View, Text, TouchableOpacity, Image} from  'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 class Home extends Component {
     constructor(props) {
@@ -22,33 +23,41 @@ class Home extends Component {
                     style={{ 
                         backgroundColor: 'white',
                         flex: 1,
-                        borderRadius:15,
-                        marginTop:144,
-                        alignItems: 'center'
+                        borderRadius: 15,
+                        marginTop: 90,
+                        alignItems: 'center',
                     }}>
-                        <TouchableOpacity 
-                    style={{
-                        shadowColor: 'black',
-                        shadowOpacity: 1,
-                        shadowRadius: 10,
-                        shadowOffset: 2,
-                        marginTop: -85
-                    }}>
-                        <Image source={require('../assets/CardGadang.png')}
-                        style={{width: 380, height: 215}}></Image>
+                        
+                    
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Quiz')} 
+                    style={{ flexDirection: 'row', justifyContent: 'space-between' ,backgroundColor: 'white', borderColor: '#000000', borderWidth: 1, margin: 16, borderRadius: 10, marginTop: 36}}>
+                        <View style={{flexDirection: 'row', flex: 1}}>
+                            <Image source={require('../assets/quiz.png')}/>
+                            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                                <Text style={{fontWeight: '500', fontSize: 24}}>Quiz</Text>
+                            </View>
+                        </View>
+                        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                            <AntDesign name="right" size={24} color="black" />
+                        </View>
                     </TouchableOpacity>
-                    <TouchableOpacity 
-                    style={{
-                        shadowColor: 'black',
-                        shadowOpacity: 1,
-                        shadowRadius: 10,
-                        shadowOffset: 2,
-                        marginTop: 10
-                    }}>
-                        <Image source={require('../assets/CardBetang.png')}
-                        style={{width: 380, height: 215}}></Image>
+
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Detail')} 
+                    style={{ flexDirection: 'row', justifyContent: 'space-between' ,backgroundColor: 'white', borderColor: '#000000', borderWidth: 1, margin: 16, borderRadius: 10}}>
+                        <View style={{flexDirection: 'row', flex: 1}}>
+                            <Image source={require('../assets/materi3d.png')}/>
+                            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                                <Text style={{fontWeight: '500', fontSize: 24}}>Materi</Text>
+                            </View>
+                        </View>
+                        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                            <AntDesign name="right" size={24} color="black" />
+                        </View>
                     </TouchableOpacity>
+
+
                 </View>
+                
             </View>
         )
     }

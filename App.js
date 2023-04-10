@@ -6,26 +6,22 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from './components/screens/Home.js';
 import Detail from './components/screens/Detail.js';
 import Splash from './components/screens/Splash.js';
-import Jawa from './components/screens/Jawa.js';
-import Jateng from "./components/screens/Jateng.js";
 import Quiz from './components/screens/Quiz';
-import Sumatra from "./components/screens/Sumatra.js";
 import Soal from "./components/screens/Soal.js";
+import Materi from "./components/screens/Materi.js";
 
 const Stack = createNativeStackNavigator();
 
 function App(){
 return(
   <NavigationContainer>
-    <Stack.Navigator initialRouteName= "Soal" screenOptions={{headerShown: false}}>
+    <Stack.Navigator initialRouteName= "Home" screenOptions={{headerShown: false}}>
       <Stack.Screen name ="Home" component={Home}></Stack.Screen>
       <Stack.Screen name ="Detail" component={Detail}></Stack.Screen>
       <Stack.Screen name = "Splash" component={Splash}></Stack.Screen>
-      <Stack.Screen name = "Jawa" component={Jawa}></Stack.Screen>
-      <Stack.Screen name = "Sumatra" component={Sumatra}></Stack.Screen>
-      <Stack.Screen name = "Jateng" component={Jateng}></Stack.Screen>
       <Stack.Screen name = "Quiz" component={Quiz}></Stack.Screen>
       <Stack.Screen name = "Soal" component={Soal}></Stack.Screen>
+      <Stack.Screen name = "Materi" component={Materi}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 )
