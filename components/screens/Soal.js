@@ -14,7 +14,7 @@ const Soal = ({ navigation }) => {
     }, []);
 
     const getQuiz = () => {
-        axios.get(`https://c3a3-2404-c0-7050-00-807-837.ngrok-free.app/api/quizzes`)
+        axios.get(`https://ed75-182-2-38-86.ngrok-free.app/api/quizzes`)
             .then((res) => {
                 setQuizzes(res.data);
             })
@@ -26,7 +26,7 @@ const Soal = ({ navigation }) => {
     const postMateri = async (answer) => {
         return await axios
             .post(
-                `https://c3a3-2404-c0-7050-00-807-837.ngrok-free.app/api/jobsheet/one`,
+                `https://ed75-182-2-38-86.ngrok-free.app/api/jobsheet/one`,
                 {
                     quizNomor: page,
                     answer: answer,
